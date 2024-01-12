@@ -4,7 +4,8 @@
         
     </head>
     <body>
-        <h1> my route Page2</h1>
+        <h1> my route Page</h1>
+        <h1>{{$myinput}}</h1>
     </body>
 
 </html>
