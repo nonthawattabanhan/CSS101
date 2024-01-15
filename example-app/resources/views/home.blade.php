@@ -3,8 +3,6 @@
 
 @section('content')
 
-
-
 <!-- Content Header (Page header) -->
 <div class="content-header">
     <div class="container-fluid">
@@ -28,9 +26,6 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6">
-
-
-
 
                 <div class="card ">
                     <div class="card-name">
@@ -79,9 +74,6 @@
                             </div>
                         </div>
                 
-                        
-                        
-
                         <div class="form-group">
                             <div class="checkMan">
                                 &nbsp; &nbsp;&nbsp; &nbsp;<input class="form-check-input" type="radio" name="radio1">
@@ -93,14 +85,9 @@
                             </div>
                           </div>
 
-
-
                     </div>
                 </div><!-- /.card -->
             </div>
-
-
-
 
             <!-- /.col-md-6 -->
             <div class="col-lg-6">
@@ -125,9 +112,6 @@
                         <textarea class="form-control" rows="3" placeholder="Enter ..." disabled></textarea>
                     </div>
                 </div>
-
-
-
 
                 <div class="card card-primary card-outline">
                     <div class="card-body">
@@ -158,9 +142,7 @@
                             </div>
                           </div>
 
-                          
-
-
+                        
                     </div>
 
                     <div class="card-body">
@@ -185,10 +167,6 @@
 <!-- /.content -->
 <!-- bs-custom-file-input -->
 <script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
-
-
-
-
 
 
 @endsection
