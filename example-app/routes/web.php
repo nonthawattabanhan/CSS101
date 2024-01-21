@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\C_titles;
 use App\Http\Controllers\MyController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -14,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::resource('titles', C_titles::class);
 
 Route::get('/', function () {
     return view('welcome');
