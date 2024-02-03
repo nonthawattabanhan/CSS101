@@ -159,6 +159,14 @@
                         role="button">
                         <i class="fas fa-th-large"></i>
                     </a>
+
+                    <!-- Logout button -->
+        <li class="nav-item">
+            <form action="{{ route('logout') }}" method="get" class="nav-link">
+                @csrf
+                <button type="submit" class="btn btn-danger">Logout</button>
+            </form>
+            
                 </li>
             </ul>
         </nav>

@@ -1,9 +1,11 @@
 <?php
 
 use App\Http\Controllers\C_titles;
+use App\Http\Controllers\MyAuth;
 use App\Http\Controllers\MyController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -11,12 +13,25 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
 |
 */
 
+Route::get('/login', [MyAuth::class, 'login_view'])->name('login');
+Route::get('/register', [MyAuth::class, 'register_view']);
+Route::get('/logout', [MyAuth::class, 'logout_process'])->name('logout');
+Route::post('/login', [MyAuth::class, 'login_process']);
+Route::post('/register', [MyAuth::class, 'register_process']);
+
+
+
+
 Route::resource('titles', C_titles::class);
+Route::middleware('auth')->group(function(){
+    // auth first
+    //Route::resource('titles', C_titles::class);
+});
 
 Route::get('/', function () {
     return view('welcome');
