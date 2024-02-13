@@ -61,3 +61,8 @@ Route::post('/my-route2',function(Request $req){
     return view('myroute',$data);
 });
 
+//MultiJquery
+Route::get('/MultiJquery',function(){
+    return view('MultiJquery');
+});
+
